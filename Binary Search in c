@@ -23,15 +23,18 @@ int binarySearch(int a[],int low,int high,int target)
 int main ()
 {
     int n,found;
+    printf("Array size:\n");
     scanf("%d",&n);
     int a[n];
-     scanf("%d",&t);
+    printf("Array elements:\n");
+
     for(int i = 0;i<n;i++)
     {
         scanf("%d",&a[i]);
     }
-  
-   int result = binarySearch( a,0,n-1,t);
+    printf("Targeted element:\n");
+     scanf("%d",&t);
+    int result = binarySearch( a,0,n-1,t);
 if(result == -1) printf("Element is not present in array");
-   else printf("Element found is at index %d",result);
+   else printf("element present is at index %d",result);
 }
